@@ -3,167 +3,169 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Looking Glass Island V2 By Team Mixed Media</title>
+<title>Team Mixed Media Presents: Looking Glass Island</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:0.1em}0%,to{top:0px}}@keyframes shudder{25%{left:0.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:0.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:0.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%, to{transform:translateX(0em)}5%, 25%, 45%{transform:translateX(-1em)}15%, 35%, 55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%, to{transform:translateY(0em)}5%, 25%, 45%{transform:translateY(-1em)}15%, 35%, 55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%, 8.1%, 82.1%, 31.1%, 38.1%, 44.1%, 40.1%, 47.1%, 74.1%, 16.1%, 27.1%, 72.1%, 24.1%, 95.1%, 6.1%, 36.1%, 20.1%, 4.1%, 91.1%, 14.1%, 87.1%, to{left:0px;top:0px}8%, 82%, 31%, 38%, 44%{left:-1px}40%, 47%, 74%, 16%, 27%{left:1px}72%, 24%, 95%, 6%, 36%{top:-1px}20%, 4%, 91%, 14%, 87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:black;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" title="' attr(title) '">'}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,0.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,0.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,0.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,0.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,0.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,0.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,0.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,0.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,0.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,0.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,0.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,0.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,0.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 0.5em 0.5em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel-source,tw-debugger .panel-row-source{font-family:monospace;overflow-x:scroll;white-space:pre;-ms-flex-preferred-size:100%;flex-basis:100%}tw-debugger .panel-row-source{margin:5px 0}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background:#EEE}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:0.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#444;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row>*{display:table-cell;padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .error-row .error-passage{color:#444}tw-debugger .storylet-row{background-color:rgba(201,233,222,0.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(128,203,178,0.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;opacity:0.4;background-color:rgba(217,217,217,0.3)}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:rgba(166,166,166,0.3)}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,0.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-debugger .resizer{position:absolute;height:3em;border-left:2px solid #ccc;border-right:2px solid #ccc;top:10px;left:4px;width:8px;cursor:ew-resize}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media (min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop ~ tw-backdrop{display:none}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage [style^="color"] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-link:hover,tw-passage [style*=" color"][hover="true"] tw-link:hover,tw-passage [style^="color"] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^="color"][hover="true"] .enchantment-link:hover,tw-passage [style*=" color"][hover="true"] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage [style^="color"] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^="color"][hover="true"] .visited:hover,tw-passage [style*=" color"][hover="true"] .visited:hover{color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage [style^="color"] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-broken-link:hover,tw-passage [style*=" color"][hover="true"] tw-broken-link:hover{color:inherit}.enchantment-mouseover{border-bottom:2px dashed #999}.enchantment-mouseout{border:rgba(64,149,191,0.6) 1px solid}.enchantment-mouseout:hover{background-color:rgba(175,197,207,0.75);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,0.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,0.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 0.5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 0.5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,0.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,0.75);border:transparent 2px solid;border-radius:0.2em}tw-link.enchantment-button,.enchantment-link.enchantment-button,.enchantment-button:not(.enchantment-link) tw-link,.enchantment-button:not(.enchantment-link) .enchantment-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media (min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:transparent;font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 0.5em}tw-story tw-noscript{animation:appear 0.8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media (min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*="width"]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:0.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:0.2}tw-icon[alt]:hover{opacity:0.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,0.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;padding:2px;white-space:pre}tw-folddown::after{content:"\25b6"}tw-folddown.open::after{content:"\25bc"}tw-open-button::after{content:"Open"}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Looking Glass Island V2 By Team Mixed Media.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Looking Glass Island V2 By Team Mixed Media" startnode="1" creator="Twine" creator-version="2.3.14" ifid="A1063DE8-51F9-4B85-818D-58F6A814B2C9" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="787.7222290039062,7.611111164093018" size="100,100">Gameheads Presents:
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Team Mixed Media Presents: Looking Glass Island.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Team Mixed Media Presents: Looking Glass Island" startnode="1" creator="Twine" creator-version="2.3.14" ifid="5017C4B2-DE5C-4B67-8A5B-B94F33DE57BA" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="395,2" size="100,100">Gameheads Presents:
 
 &lt;img src=&quot;https://i.pinimg.com/originals/2f/b7/54/2fb754a6d5d638ac45acbe272f261f79.jpg&quot; alt=&quot;title photo&quot;&gt;
 
 A Visual Novel By Team Mixed Media
 
-[[Begin The Story]]</tw-passagedata><tw-passagedata pid="2" name="Begin The Story" tags="" position="789.7222290039062,125.61111116409302" size="100,100">*A group of heart monitors beep.*
+[[Begin The Story]]</tw-passagedata><tw-passagedata pid="2" name="Begin The Story" tags="" position="252,1" size="100,100">A group of heart monitors beep.
 
-&#39;&#39;Mr. Shifner&#39;&#39;
-&quot;What qualifies as your true self?&quot;
-
-*The groups&#39; heart monitors flatline.*
+The groups&#39; heart monitors flatline.
 
 Doctor &amp; Nurses
-&quot;Clear!&quot;
+Clear!
 
-*The group&#39;s bodies thump and their heartbeats pulse steady.*
+The group&#39;s bodies thump and their heartbeats pulse steady.
 
-[[Start Montage]]</tw-passagedata><tw-passagedata pid="3" name="Start Montage" tags="" position="389.72222900390625,8.111111164093018" size="100,100">(css: &quot;color: white;&quot;)[[- A get-together on a yacht heading to Looking Glass Island.
+Doctor
+Soul Group One is now active. Their vitals are stable! 
+
+[[Start Montage]]</tw-passagedata><tw-passagedata pid="3" name="Start Montage" tags="" position="103,2" size="100,100">(css: &quot;color: white;&quot;)[[Four friends get together on a yacht heading to Looking Glass Island.
+
 &lt;img
-src=&quot;https://i.pinimg.com/originals/b2/f4/65/b2f465cc3d85a5ec79d12a9a8fa44747.jpg&quot; alt=&quot;get together&quot;&gt;]] 
+src=&quot;https://i.pinimg.com/originals/b2/f4/65/b2f465cc3d85a5ec79d12a9a8fa44747.jpg&quot; alt=&quot;title photo&quot;&gt;]] 
 
-[[2]]</tw-passagedata><tw-passagedata pid="4" name="- Corwin looks through a telescope and notices the Island is approaching." tags="" position="132.72222900390625,386.72222232818604" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="- Corwin switches the yacht to autopilot." tags="" position="240.72222900390625,385.611111164093" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="6" name="2" tags="" position="139.72222900390625,121.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- Their names are Maya, Jayla, James, &amp; Corwin.  They party on the yacht owned by Corwin&#39;s parents.
+[[2]]</tw-passagedata><tw-passagedata pid="4" name="2" tags="" position="19,115" size="100,100">(css: &quot;color: white;&quot;)[[
 
 Maya
-&quot;We are going to have so much fun!&quot;
+We are going to have so much fun!
 
 Jayla
-&quot;Corwin, I still can&#39;t believe you convinced your parents to let you take the yacht.
+Corwin, I still can&#39;t believe you convinced your parents to let you take the yacht.
 
 Corwin
-&quot;Well, haha you can just say... Let&#39;s not talk about it.&quot;
+Well, haha you can just say... Let&#39;s not talk about it.
 
 James
-&quot;What! You did not tell your parents?&quot;
+What! You did not tell your parents?
 
 Corwin
-&quot;Shhh James... Shhh please.&quot;
+Shhh, James... Shhh, please.
 
 &lt;img
 src=&quot;https://i.pinimg.com/originals/86/ab/eb/86abeb1791da071a6fbd88e635d83961.jpg&quot; alt=&quot;Four Friends&quot;&gt;]] 
 
-[[3]]</tw-passagedata><tw-passagedata pid="7" name="3" tags="" position="261.22222900390625,121.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- Corwin looks through a telescope and notices the Island is approaching.
+[[3]]</tw-passagedata><tw-passagedata pid="5" name="3" tags="" position="141,117" size="100,100">(css: &quot;color: white;&quot;)[[
 
 Corwin
-&quot;The Island looks beautiful.&quot;
+The Island looks beautiful.
 
 &lt;img
 src=&quot;https://i.pinimg.com/originals/e4/ef/69/e4ef69466cd28265f568e2747ea9f756.jpg&quot; alt=&quot;Looking through telescope&quot;&gt;]] 
 
-[[4]]</tw-passagedata><tw-passagedata pid="8" name="4" tags="" position="391.22222900390625,115.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- He turns around and informs the group.
+[[4]]</tw-passagedata><tw-passagedata pid="6" name="4" tags="" position="258,115" size="100,100">(css: &quot;color: white;&quot;)[[
 
 Cowin
-&quot;Hey everyone, the Island is approaching!&quot;
+Hey everyone, the Island is approaching!
 
 James
-&quot;Took us long enough.&quot;
+Took us long enough.
 
 Maya
-&quot;Well, we are close, in one piece right?&quot;
+Well, we are close, in one piece, right?
 
 Jayla
-&quot;I mean a lot can happen between now and when we get there.&quot;
+I mean a lot can happen between now and when we get there.
 
 Maya
-&quot;Don&#39;t jinx us!&quot;
+Don&#39;t jinx us!
 
 &lt;img
 src=&quot;https://i.pinimg.com/originals/d3/53/e2/d353e2e5b7d851fec3a1ef85582e0567.jpg&quot; alt=&quot;title photo&quot;&gt;]] 
 
-[[5]]</tw-passagedata><tw-passagedata pid="9" name="5" tags="" position="520.2222290039062,118.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- Maya making sure Corwin is okay.
+[[5]]</tw-passagedata><tw-passagedata pid="7" name="5" tags="" position="373,119" size="100,100">(css: &quot;color: white;&quot;)[[
 
 Maya
-&quot;Corwin, are you okay?&quot;
+Corwin, are you okay?
 
 Corwin
-&quot;I am doing fine, just a little tired.  It&#39;s hard-driving this yacht.  My parents did not really teach me but I observed my dad many times.
+I am doing fine, just a little tired.  It&#39;s hard-driving this yacht.  My parents didn&#39;t teach me but I observed my dad many times.
 
 Maya
-&quot;Wait what?  You don&#39;t know how to drive the yacht?!&quot;
+Wait for what?  You don&#39;t know how to drive the yacht?!
 
 Corwin
-&quot;Shhhhh.  Shut up, don&#39;t tell everyone.  I don&#39;t want to panic everyone.&quot;
+Shhhhh.  Shut up, don&#39;t tell everyone.  I don&#39;t want to panic everyone.
 
 Maya
-&quot;So it&#39;s cool for me to panic right?&quot;
+So it&#39;s cool for me to panic right?
 
 Corwin
-&quot;Not exactly...&quot;
+Not exactly...
 
 Maya
-&quot;I see how it is.&quot;
+I see how it is.
 
 &lt;img
 src=&quot;https://i.pinimg.com/originals/1c/6a/6d/1c6a6dae2dd061e8968ba2280006b490.jpg&quot; alt=&quot;title photo&quot;&gt;]] 
 
-[[6]]</tw-passagedata><tw-passagedata pid="10" name="6" tags="" position="639.2222290039062,112.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- Jayla reacts to a horror movie she is watching.
+[[6]]</tw-passagedata><tw-passagedata pid="8" name="6" tags="" position="489,116" size="100,100">(css: &quot;color: white;&quot;)[[
 
 Jayla
-&quot;Why did she go in there.  It&#39;s clear that she was going to die.
+Why did she go in there?  It&#39;s clear that she was going to die.
 
 The yacht rocks hard.
 
 Jayla 
-&quot;Whoah!&quot;
+Whoah!
 
 &lt;img
 src=&quot;https://i.pinimg.com/originals/9e/cf/a8/9ecfa8d459e3d20be6c5a3bc6b9669d0.jpg&quot; alt=&quot;title photo&quot;&gt;]] 
 
-[[7]]</tw-passagedata><tw-passagedata pid="11" name="7" tags="" position="140.22222900390625,227.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- James is drinking a cold soda relaxing.
+[[7]]</tw-passagedata><tw-passagedata pid="9" name="7" tags="" position="488,230" size="100,100">(css: &quot;color: white;&quot;)[[
 
 James
-&quot;I love Misties.  These sodas are so goood!&quot;
+I love Misties.  These sodas are so good!
 
 &lt;img
 src=&quot;https://i.pinimg.com/originals/b5/c8/58/b5c858da9df35c5c162618b2cabdf074.jpg&quot; alt=&quot;title photo&quot;&gt;]] 
 
-[[8]]</tw-passagedata><tw-passagedata pid="12" name="8" tags="" position="267.22222900390625,229.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- Corwin switches the yacht to autopilot.
+[[8]]</tw-passagedata><tw-passagedata pid="10" name="8" tags="" position="372,228" size="100,100">(css: &quot;color: white;&quot;)[[
 
 Corwin
-&quot;I am going to take a little break.  I think it&#39;s safe right now to have on autopilot.&quot;
+I am going to take a little break.  I think it&#39;s safe right now to have on autopilot.
 
 James
-&quot;Hey Corwin, get over here! We&#39;re going to make a toast!&quot;
+Hey Corwin, get over here! We&#39;re going to make a toast!
 
 &lt;img
 src=&quot;https://i.pinimg.com/originals/cf/ef/22/cfef22c6899158667917c5f2f71a96b1.jpg&quot; alt=&quot;title photo&quot;&gt;]] 
 
-[[9]]</tw-passagedata><tw-passagedata pid="13" name="9" tags="" position="392.72222900390625,227.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- Everyone stands together and cheering to friendship.
+[[9]]</tw-passagedata><tw-passagedata pid="11" name="9" tags="" position="254,229" size="100,100">(css: &quot;color: white;&quot;)[[
 
 Maya, Jayla, James, and Corwin
-&quot;To friendship!&quot;
+To friendship!
 
 &lt;img
 src=&quot;https://i.pinimg.com/originals/72/aa/46/72aa46e7ae268fb01a694bf07308b9dc.jpg&quot; alt=&quot;title photo&quot;&gt;]] 
 
-[[10]]</tw-passagedata><tw-passagedata pid="14" name="10" tags="" position="515.7222290039062,229.61111116409302" size="100,100">(css: &quot;color: white;&quot;)[[- A bizarre mist passes though knocking the group unconscious.
+[[10]]</tw-passagedata><tw-passagedata pid="12" name="10" tags="" position="138,228" size="100,100">(css: &quot;color: white;&quot;)[[
 
-*Coughing*
+Coughing
 
 &lt;img src=&quot;https://i.pinimg.com/originals/bd/01/86/bd0186674a281322d2c45d2200953035.jpg&quot; alt=&quot;title photo&quot;&gt;]] 
 
-[[11]]</tw-passagedata><tw-passagedata pid="15" name="11" tags="" position="635.7222290039062,222.61111116409302" size="100,100">(link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[*yacht crash noise*]
+[[11]]</tw-passagedata><tw-passagedata pid="13" name="11" tags="" position="18,226" size="100,100">(link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[yacht crash noise]
 
-[[12]]</tw-passagedata><tw-passagedata pid="16" name="12" tags="" position="635.7222290039062,328.611111164093" size="100,100">(set:$name to (prompt: &quot;Enter your name: &quot;, &quot;Default Name&quot;)) 
+[[12]]</tw-passagedata><tw-passagedata pid="14" name="12" tags="" position="249,337" size="100,100">(set:$name to (prompt: &quot;Enter your name: &quot;, &quot;Default Name&quot;)) 
 
 Mr. Shifner
-&quot;Hello there $name. My name is Mr. Shifner, and I will be your tour guide during your stay on this wonderful Island.  I hope you don&#39;t plan to leave anytime soon. But by the looks of it, your stay will be longer than intended.
+Hello $name, nice to meet you.  My name is Mr. Shifner, and I will be a voice you hear from time to time helping you when I think you need me most. Think of me as a voice in your head. You have been chosen to tell the rest of this story that is nowhere near complete.  The choices you make will complete it.  I know you are probably thinking about why couldn&#39;t I prevent the crash. Some things are just set to happen like that.
 
-During your stay, you&#39;ll be prompted to act and answer questions quickly and efficiently to ensure the safety of the group. To make their stay as pleasant as possible, I suggest you make the right choices. They are in your care $name.  Good luck!&quot;
+(link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[Laughing]
 
-(link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[*Laughing sound*]
+Mr. Shifner
+Good luck $name
 
-[[Next]]</tw-passagedata><tw-passagedata pid="17" name="Next" tags="" position="636.7222290039062,434.611111164093" size="100,100">(css: &quot;color: green;&quot;)[Group Morale:
-Confused (+/-)]
+[[Begin Chapter 1]]</tw-passagedata><tw-passagedata pid="15" name="Begin Chapter 1" tags="" position="252,448" size="100,100">(css: &quot;color: green;&quot;)[Group Morale:
+(+/-)]
  
 (link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[*Ears ringing noise*]
  
@@ -172,389 +174,109 @@ Maya, Jayla, and James open their eyes and look at each other.   They are spread
 Jayla raises to her feet and rubs her head.   
  
 Jayla
-&quot;What happened?&quot;
+What happened?
  
 Maya is beside her, rising to her feet.
  
 Maya
-&quot;I have no idea, all I remember is us standing in a circle doing cheers to friendship then boom!  Here we are.&quot;
+I have no idea, all I remember is us standing in a circle doing cheers to friendship then boom!  Here we are.
  
-James is further away and looks around *gasps* for air.
+James is further away and looks around gasps for air.
  
 James
-&quot;My inhaler!&quot; *gasps* &quot;Where is it!&quot; *gasps*&quot;
+My inhaler...! Where is it...!
  
 [[Look around for inhaler.]]
-</tw-passagedata><tw-passagedata pid="18" name="Tell the group Corwin is missing." tags="" position="518.7222290039062,765.611111164093" size="100,100">(css: &quot;color: green;&quot;)[Group Morale:
+</tw-passagedata><tw-passagedata pid="16" name="Look around for inhaler." tags="" position="256,558" size="100,100">James
+I had it in my pocket.  It couldn&#39;t have gotten far.  It&#39;s not like it has legs and ran away.
+
+James pats pockets again and notices 3 holes in the sand. He walks over to them.
+
+[[Peek into hole 1]]
+[[Peak into hole 2]]
+[[Peak into hole 3]]
+</tw-passagedata><tw-passagedata pid="17" name="Peek into hole 1" tags="" position="121,558" size="100,100">James
+Nothing there!
+
+[[Look around for inhaler]]</tw-passagedata><tw-passagedata pid="18" name="Peak into hole 2" tags="" position="258,676" size="100,100">James
+There it is!
+
+James takes takes takes a deep breath. [[Puff,Puff]] He takes two puffs from his inhaler.  Holds his breath for 5 seconds then continues breathing normally.
+
+James
+That was a close one.  Should I tell the group Corwin is nowhere to be seen?
+
+[[Tell the group Corwin is missing.]]
+[[Keep it to yourself.]]</tw-passagedata><tw-passagedata pid="19" name="Peak into hole 3" tags="" position="400,554" size="100,100">James
+Nothing there!
+
+[[Look around for inhaler]]
+</tw-passagedata><tw-passagedata pid="20" name="Look around for inhaler" tags="" position="64,426" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Tell the group Corwin is missing." tags="" position="186,788" size="100,100">(css: &quot;color: green;&quot;)[Group Morale:
 Panic (-)]
 
 James walks over to the group.
 
 James
-&quot;Hey yall.  So um...  Corwin is missing.  Has anyone seen him?&quot;
+Hey yall.  So um...  Corwin is missing.  Has anyone seen him?
 
 Maya
-&quot;He was taken for sure!&quot;
+He was taken for sure!
 
 Jayla
-&quot;Maybe he drowned?&quot;
+Maybe he drowned?
 
 James
-&quot;But he owned the boat?  Don&#39;t you think he knew how to swim?&quot;
+But he owned the boat?  Don&#39;t you think he knew how to swim?
 
 Maya
-&quot;You mean his parents owned the yacht?  It&#39;s not a boat and he ain&#39;t here.&quot;
+Do you mean his parents owned the yacht?  It&#39;s not a boat and he ain&#39;t here.
 
 Jayla
-&quot;Maybe he is exploring the island?&quot;
+Maybe he is exploring the island?
 
 James
-&quot;By himself?&quot;
+By himself?
 
 Maya
-&quot;Well, he ain&#39;t here. Soooo...&quot;
+Well, he ain&#39;t here. Soooo...
 
 James
-&quot;Well, we can check and see if the yacht is functional?&quot;
+Well, we can check and see if the yacht is functional?
 
-Mr. Shifner
-&quot;Should they check $name?&quot;
-
-[[Yes]]
-[[No]]
-
-[[End Demo]]</tw-passagedata><tw-passagedata pid="19" name="Keep it to yourself." tags="" position="760.7222290039062,766.5000042915344" size="100,100">(css: &quot;color: green;&quot;)[Group Morale:
+Yes
+No
+[[End Demo]]</tw-passagedata><tw-passagedata pid="22" name="Keep it to yourself." tags="" position="362,788" size="100,100">(css: &quot;color: green;&quot;)[Group Morale:
 Less alarmed (+)]
 
 James walks over to the group.
 
 James
-&quot;So, what&#39;s next?&quot;
+So, what&#39;s next?
 
 Jayla
-&quot;Well, we are on the island.  That&#39;s a start.&quot;
+Well, we are on the island.  That&#39;s a start.
 
 Maya
-&quot;How are we going to leave now?&quot;
+How are we going to leave now?
 
 James
-&quot;Well, we can check and see if the yacht is functional?&quot;
+Well, we can check and see if the yacht is functional?
 
-Mr. Shifner
-&quot;Should they check $name?&quot;
-
-[[Yes]]
-[[No]]
-
-[[End Demo]]</tw-passagedata><tw-passagedata pid="20" name="Yes" tags="" position="497.72222900390625,880.611111164093" size="100,100">(css: &quot;color: green;&quot;)[Group Morale: (+)]
-
-Maya, James, and Jayla stand by the steering wheel trying to start the Yacht.
-
-(link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[*The yacht makes a weird broken noise*]
-
-Jayla
-&quot;Well, that didn&#39;t sound good.&quot;
-
-Maya looks outside down at the rising water.
-
-(css: &quot;color: green;&quot;)[Group Moral:
-Disappointed (-)]
-
-Maya
-&quot;Hey, Maya and James... Well... We are kinda sinking.&quot;
+Yes
+No
+[[End Demo]]</tw-passagedata><tw-passagedata pid="23" name="Puff,Puff" tags="" position="509,677" size="100,100">[*inhale*]
 
 James
-&quot;Oh sh*t!&quot; 
+(in his head)
+1, 2, 3, 4, 5.
 
-They quickly disembark from the Yacht and watch it sink into the water.
+[*exhale*]
 
-James
-&quot;Well, that could have been us.&quot;   
-
-[[Rub your head]]</tw-passagedata><tw-passagedata pid="21" name="No" tags="" position="777.7222290039062,878.611111164093" size="100,100">(css: &quot;color: green;&quot;)[Group Morale: (-)]
-
-Maya, James, and Jayla stand by the Yacht thinking of what to do next.
-
-(link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[*Yacht makes a weird broken noise*]
-
-The Yacht starts sinking in the water.
-
-Jayla
-&quot;Well now we are for sure stuck on the island.&quot; 
-
-James
-&quot;Well, that could have been us.&quot; 
-
-Jayla
-&quot;Where is Corwin?&quot;
-
-Maya
-&quot;Holy moly where is he.  We have been so busy figuring out all how to get off the island that we forgot about our friend.&quot;
-
-James [[stays quiet.]]</tw-passagedata><tw-passagedata pid="22" name="Rub your head" tags="" position="498.72222900390625,988.611111164093" size="100,100">(css: &quot;color: green;&quot;)[Group Morale: (-)]
-
-Maya
-&quot;Wait a minute.  Wheres Corwin?&quot;  
-
-James
-&quot;Well, about Corwin.  I kinda knew he was missing but did not tell y&#39;all.  I&#39;m sorry about that because I did not want anyone to worry.&quot;
-
-Jayla
-&quot;Worry, he&#39;s our friend!  Some friend you are.&quot;
-
-Maya 
-&quot;Don&#39;t be so mean we kinda just crashed on an island.&quot;
-
-Jayla
-&quot;This is your first strike.&quot;
-
-(link-replace: &quot;...&quot;)+(css: &quot;color: orange;&quot;)[Note: James has 1 strike.]
-
-Mr. Shifner
-&quot;Ohhh, tisk tisk.  Strike number 1.  Well you could not of avoided this one.  But let me explain the strikes.  Get 3 Maya and Jayla will no longer trust James.  Be careful.&quot; 
-
-(link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[*Laughing sound*]
-
-James
-&quot;You ain&#39;t the boss of me.&quot;
-
-Jayla
-&quot;No one is the boss of anyone but you don&#39;t have to be a prick.&quot;
-
-Maya
-&quot;Yeah, Jayla is right.  Just knock it off.  Thats it.&quot;
-
-James
-&quot;So where to next?&quot;
-
-Jayla
-&quot;Let&#39;s go check out the Welcome Center and look at the map.&quot;
-
-James
-&quot;Why look at a map?&quot;
-
-Jayla 
-&quot;To see where we should go next.  Maybe we can find a clue where Corwin went.&quot;
-
-Mr. Shifner
-&quot;$name what do you think Maya should do?&quot;
-
-[[Agree]] 
-[[Disagree]]</tw-passagedata><tw-passagedata pid="23" name="stays quiet." tags="" position="778.7222290039062,983.611111164093" size="100,100">Maya
-&quot;Why are you so quiet James?  Did you already know he was missing?  You are acting a little sus.&quot;
-
-Jayla
-&quot;I hate that word sus... Please do not use that word.&quot;
-
-Maya
-&quot;Sorry&quot;
-
-James
-[[&quot;Yeah, I knew. I should have mentioned it when I realized it. I&#39;m sorry.&quot;]]</tw-passagedata><tw-passagedata pid="24" name="Agree" tags="" position="498.72222900390625,1106.611111164093" size="100,100">(css: &quot;color: green;&quot;)[Group Morale: (+)]
-
-Maya
-&quot;I agree with Jayla let&#39;s go check out the Welcome Center.&quot;
-
-Jayla
-&quot;How about you James, what do you say?&quot;
-
-James
-&quot;I&#39;m fine with whatever just let me lead the way.&quot;
-
-[[Proceed To Welcome Center]]</tw-passagedata><tw-passagedata pid="25" name="Disagree" tags="" position="779.7222290039062,1116.611111164093" size="100,100">(css: &quot;color: green;&quot;)[Group Morale: (-)]
-
-Maya
-&quot;I think we should just sit and wait here.&quot;
-
-*Scary shriek noise*
-
-Maya 
-&quot;Never mind lets go!&quot;
-
-James
-&quot;Lets hurry and let me lead the way.&quot;
-
-[[Proceed To Welcome Center]]</tw-passagedata><tw-passagedata pid="26" name="&quot;Yeah, I knew. I should have mentioned it when I realized it. I&#39;m sorry.&quot;" tags="" position="643.7222290039062,1047.611111164093" size="100,100">Jayla
-&quot;We almost forgot about him.  Mentioning that he was missing should have been the first thing you told us.  His parents are about to be so pissed that both their son is missing and their yacht just sank.&quot;
-
-James
-&quot;Well, about that.  I kinda knew he was missing but did not tell y&#39;all.  I&#39;m sorry about that because I did not want you to worry.&quot;
-
-Jayla
-&quot;Worry!  He&#39;s our friend!  Some friend you are.&quot;
-
-Maya
-&quot;This is your first strike.&quot;
-
-(link-replace: &quot;...&quot;)+(css: &quot;color: orange;&quot;)[Note: James has 1 strike.]
-
-Mr. Shifner
-&quot;Ohhh, tisk tisk.  Strike number 1.  Well, you could not have avoided this one.  But let me explain the strikes.  Get 3 Maya and Jayla will no longer trust James.  Be careful.&quot; 
-
-(link-replace: &quot;...&quot;)+(css: &quot;color: red;&quot;)[*Laughing sound*]
-
-James
-&quot;You ain&#39;t the boss of me.&quot;
-
-Jayla
-&quot;No one is the boss of anyone but you don&#39;t have to be a prick.&quot;
-
-Maya
-&quot;Yeah, Jayla is right.  Just knock it off.  That&#39;s it.&quot;
-
-James
-&quot;So where to next?&quot;
-
-Jayla
-&quot;Let&#39;s go check out the Welcome Center and look at the map.&quot;
-
-James
-&quot;Why look at a map?&quot;
-
-Jayla 
-&quot;To see where we should go next.  Maybe we can find a clue where Corwin went.&quot;
-
-Mr. Shifner
-&quot;What do you think Maya?&quot;
-
-[[Agree]] 
-[[Disagree]]</tw-passagedata><tw-passagedata pid="27" name="Proceed To Welcome Center" tags="" position="642.7222290039062,1221.611111164093" size="100,100">(css: &quot;color: green;&quot;)[Group Morale: (+/-)]
-
-Maya, James, and Jayla approach the Welcome Center counter where they see that the shutter is down.  Jayla notices a sign and reads it.
-
-Jayla
-&quot;Keep... Out...&quot;
-
-The shutter opens quickly and something brushes past Jayla&#39;s face.
-
-Jayla
-&quot;Ahhh!&quot; 
-
-Jayla whips off her face
-
-James
-&quot;Ohhh sh*t!&quot;
-
-Maya
-&quot;Whoah!&quot;
-
-A person that looks like Corwin turns his head and hisses.  
-
-Maya
-&quot;Corwin?&quot;
-
-He runs away into the trees.
-
-James
-&quot;Is it just me or did that look like Corwin?&quot;
-
-Maya
-&quot;That sure did look like him.&quot;
-
-Jayla
-&quot;My heart is still racing from that.&quot; 
-
-Maya
-&quot;You think we should split up? One of us stay here while the others chase down Corwin or that look alike?&quot; 
-
-Mr. Shifner
-&quot;Should they check?  I mean you came here to check in the first place.&quot;
-
-Jayla
-[[&quot;We have no other choice.&quot;]]
-[[&quot;Hell na, do you watch scary movies?&quot;]]</tw-passagedata><tw-passagedata pid="28" name="&quot;We have no other choice.&quot;" tags="" position="459.72222900390625,1292.611111164093" size="100,100">James
-&quot;I will check it.  Move out of the way please.&quot;
-
-Jayla moves out the way.
-
-James jumps over the counter into the Welcome Center.
-
-Mr. Shifner
-&quot;James sees a note labeled  &quot;To My Best Friends&quot;, an Old Mask, and a v/h/s tape.  Which should he pick up?&quot;
-
-[[Note]]
-[[Old Mask]]
-[[V/H/S Tape]]</tw-passagedata><tw-passagedata pid="29" name="&quot;Hell na, do you watch scary movies?&quot;" tags="" position="798.7222290039062,1290.611111164093" size="100,100">
-Maya
-&quot;Yes, I watch scary movies.&quot;
-
-Jayla
-&quot;Then why did you mention splitting up? One, we are Black, dying first is typically what happens.  But since there&#39;s 3 of us, who knows who will be first.&quot;
-
-James
-&quot;I mean, we aren&#39;t in a movie though? But I am willing to lead the way regardless.  Just let me pray real quick.&quot;  
-
-Jayla
-&quot;That&#39;s what they want us to think.&quot;
-
-Maya
-&quot;Jayla... What are you talking about?&quot;
-
-James
-&quot;Don&#39;t mind her, she&#39;s just losing it.&quot;
-
-Maya
-&quot;Jayla just calm down.  Everything is going to be fine.&quot; 
-
-James crosses his heart and looks up to the sky.
-
-James
-&quot;If you are up there God.  Please don&#39;t let me die.  I am too young to die.&quot;
-
-Maya shakes her head.
-
-Maya
-&quot;This guy, I swear.&quot;
-
-James
-&quot;What, a man can&#39;t pray?&quot;
-
-Jayla shakes her head.
-
-Jayla
-&quot;I thought I was losing it.&quot;
-
-  [[____]]</tw-passagedata><tw-passagedata pid="30" name="Note" tags="" position="342.72222900390625,1415.611111164093" size="100,100">*Note Reads* Dear Friends, </tw-passagedata><tw-passagedata pid="31" name="Old Mask" tags="" position="458.72222900390625,1413.611111164093" size="100,100">James lifts up the mask.
-
-James
-&quot;</tw-passagedata><tw-passagedata pid="32" name="V/H/S Tape" tags="" position="578.7222290039062,1410.611111164093" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="____" tags="" position="807.7222290039062,1405.611111164093" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Look around for inhaler." tags="" position="639.7222290039062,546.0555577278137" size="100,100">James
-&quot;I had it in my pocket.  It couldn&#39;t have gotten far.  It&#39;s not like it has legs and ran away.&quot;
-
-*Pats pockets again*
-
-James sees 3 holes in the sand and walks over to them.
-
-Mr. Shifner
-&quot;Here is your first decision $name.  Which hole should James look into?&quot;
-
-[[Peek into hole 1]]
-[[Peak into hole 2]]
-[[Peak into hole 3]]</tw-passagedata><tw-passagedata pid="35" name="Peek into hole 1" tags="" position="479.72222900390625,502.76985216140747" size="100,100">James
-&quot;Nothing there!&quot;
-
-[[Look around for inhaler.]]</tw-passagedata><tw-passagedata pid="36" name="Peak into hole 2" tags="" position="641.7222290039062,653.0555577278137" size="100,100">James
-&quot;There it is!&quot;
-
-James takes takes takes a deep breath. ([[Puff, Puff]]) He takes two puffs from his inhaler.  Holds his breath for 5 seconds then continues breathing normally.
-
-James
-&quot;That was a close one.  Should I tell the group Corwin is nowhere to be seen?&quot;
-
-Mr. Shifner
-&quot;Do you want to tell the group or keep it to yourself?  Make your decision now.&quot;
-
-[[Tell the group Corwin is missing.]]
-[[Keep it to yourself.]]</tw-passagedata><tw-passagedata pid="37" name="Peak into hole 3" tags="" position="828.7222290039062,507.0555577278137" size="100,100">James
-&quot;Nothing there!&quot;
-
-[[Look around for inhaler.]]</tw-passagedata><tw-passagedata pid="38" name="End Demo" tags="" position="1095.7222290039062,650.611111164093" size="100,100">Thank You For Playing $name!
+Go Back to [[Peak into hole 2]]</tw-passagedata><tw-passagedata pid="24" name="Yes" tags="" position="205,903" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="No" tags="" position="327,906" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="End Demo" tags="" position="265,1032" size="100,100">Thanks for playing!
 
 - Team Mixed Media
 
-If you would you like to play again press Start.
-
-[[Start]]
-[[Credits]]</tw-passagedata><tw-passagedata pid="39" name="Credits" tags="" position="1292.7222290039062,739.611111164093" size="100,100">Looking Glass Island 
+[[Credits]]</tw-passagedata><tw-passagedata pid="27" name="Credits" tags="" position="265,1159" size="100,100">Looking Glass Island 
 Credits
 
 Breana Mahoney - Artist &amp; Programmer 
@@ -565,90 +287,31 @@ Devin Wessell - Team Lead, Project Manager, Narrative, &amp; Game Designer
 
 Special Thanks To
 
+Mentors:
+
 Scott Stephan
 
-Jolie Menzel</tw-passagedata><tw-passagedata pid="40" name="Puff, Puff" tags="" position="381.72222900390625,684.0555577278137" size="100,100">[*inhale*]
+Jolie Menzel
 
-James
-(in his head)
-&quot;1, 2, 3, 4, 5.&quot;
+Don Xu
 
-[*exhale*]
+Crysta Frost
 
-Go Back to [[Peak into hole 2]]</tw-passagedata><tw-passagedata pid="41" name="End Sequence " tags="" position="1321,907.611111164093" size="100,100">You are nearing the ending of this game.  We hope that you are enjoying the game so far.  Would you like to continue to the end?
+Gameheads:
 
-[[Continue to the end]]
-[[Credits]]</tw-passagedata><tw-passagedata pid="42" name="Continue to the end" tags="" position="1319,1025.611111164093" size="100,100">Maya, Jayla, and James walk into the Lighthouse.
+Damon Packwood
 
-Maya, Jayla, and James look around.
+Marcus Montgomery
 
-James
-&quot;This is what&#39;s in the Lighthouse?&quot;
+Paul Rybicki
 
-Maya
-&quot;I can&#39;t believe it.  It&#39;s so beautiful.&quot;
+Raymond Graham
 
-James
-&quot;There is something up.  There is no way this Island has a Lighthouse like this.&quot;
+Jose Martinez
 
-*Evil Laugh*
+Erik Salazar
 
-A mirror starts lowering from up high.  The mirror stops by Maya, Jayla, and James.
-
-Evil Voice
-&quot;Hello, I can see you made it this far. I am quite surprised. Being that you are...&quot;
-
-Jayla
-&quot;Don&#39;t you say it.  I know what you are going to say.  You were going to say, Black!&quot;
-
-Evil Voice
-&quot;No, no, no, I would never say that.&quot;
-
-Jayla
-&quot;What were you going to say?&quot;
-
-Evil Voice
-&quot;Young... But anyway.  I can grant you access to this Island for a fee.  This fee is a life from the group.&quot;
-
-Maya, Jayla, and James hug each other tightly. 
-
-Evil Voice
-&quot;So who is it going to be?&quot;
-
-James steps away from the group.
-
-James
-&quot;Me, take me.&quot;
-
-Evil Voice
-&quot;Oooooo, my favorite.  A male sacrifice, there should be more men like you.&quot;
-
-James
-&quot;What is that suppose to mean.&quot;
-
-Evil Voice
-&quot;There have been many groups before you.  All of them never made a quick decision.  I always had to make it for them.  But anyway, step inside.&quot;
-
-James hugs Maya and Jayla.
-
-Maya and Jayla
-&quot;I am going to miss you.&quot;
-
-James
-&quot;I will always be with you both.  Just look into your heart and keep me in your dreams.  My spirit will stay while my body departs.&quot;
-
-Evil Voice
-*Sniff Sniff*
-
-James looks over at the mirror.
-
-James 
-&quot;Are you crying?&quot;
-
-Evil Voice
-&quot;I have something in my frame.  I am okay.  Now get in!&quot;
-
-James crosses his arms and falls backward into the mirror.</tw-passagedata></tw-storydata>
+Zoram Mercado</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
